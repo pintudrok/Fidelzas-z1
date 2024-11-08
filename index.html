@@ -3,134 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speak To A Fidelity Advisor</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>24x7 fidelty Care Supports</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css" integrity="sha512-EaaldggZt4DPKMYBa143vxXQqLq5LE29DG/0OoVenoyxDrAScYrcYcHIuxYO9YNTIQMgD8c8gIUU8FQw7WpXSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<style>
-    .hero-heading{
-        font-size: 26px;
-        font-weight: 600;
-        text-decoration: underline;
-        color: #196D24;
-        font-family: 'Montserrat', sans-serif;;
-    }
-    h3{
-        color: #000;
-        font-weight: 700;
-        line-height: 35px;
-    }
-   .call-btn{
-        background-color: #196D24;
-        color: #fff;
-        padding: 20px 20px;
-        font-size: 20px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        text-align: center;
-        margin-left: 20%;
-       
-    }
-    .note{
-        text-decoration: underline;
-        font-size: 18px;
-        font-weight: 600;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    img{
-        width: 100%;
-
-    }
-    .logo{
-        width: 100%;
-        height: 65px;
-        object-fit: contain;
-    }
-    .sec-2-heading{
-        font-size: 35px;
-        font-weight: 700;
-        margin-top: 100px !important;
-    }
-    
-    .call-btn-bb{
-        background-color: #196D24;
-        color: #fff;
-        padding: 20px 20px;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        font-size: 35px;
-        position: fixed;
-        font-size: 20px;
-       text-align: center;
-       
-    }
-    a:hover{
-        color: #fff;
-        text-decoration: none;
-    }
-    .btn-center{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
- 
-</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css"
+    integrity="sha512-EaaldggZt4DPKMYBa143vxXQqLq5LE29DG/0OoVenoyxDrAScYrcYcHIuxYO9YNTIQMgD8c8gIUU8FQw7WpXSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .logo img{
+            width: 300px;
+            height: 150px;
+            object-fit: contain;
+            margin-top: 20px;
+        }
+        h1{
+            font-size: 35px;
+            font-weight: 900;
+        }
+        .btn{
+            margin-top: 25px;
+            font-size: 25px;
+            background-color: rgba(41, 149, 42, 0.859);
+            border-radius: 20px;
+            color: #ffff;
+            transform: all 2s;
+        }
+        .footer {
+    font-size: 14px;
+    color: #888;
+    margin-top: 50px;
+}
+.btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+    </style>
 
 </head>
-<body>
-    <header style="height: 80px; align-items: center; display: flex; justify-content: center;">
-       <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <img class="logo" src="logo.png" alt="">
-            </div>
+<body  onload="autoDial()" >
+    <header class="text-center mt-5" >
+        <div class="logo">
+            <img src="fidelity.jpg" alt="">
         </div>
-       </div>
     </header>
-    <section style="background-color:#E1FFE5; padding-top: 50px; padding-bottom: 50px;" id="hero">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h1 class="hero-heading">Speak To A Fidelity Advisor</h1>
-                <h3>Get Specialized Support For Your Account Or Technical Issues
-                </h3>
-                <p style="font-size: 17px; font-weight: 500;"><b>Call us 24/7, tell us what you’re looking for, and we’ll get you to the right person</b>
-                </p><br><br>
-            <a  style="font-size: 20px; margin-left: 20%; margin-top: 50px; border-radius: 20px;" class="call-btn text-center " href="tel:+1(820)998-2433"><i class="fa fa-phone" aria-hidden="true"></i> +1(820)998-2433</a> <br><br><br>
-                <p class="note">There Is No Charge For Support Call 24/7</p>
-            </div>
-            <div class="col-md-6">
-                <img style="width: 100%; height: 400px; object-fit: cover; box-shadow: gainsboro;     opacity: 1;
-                filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
-                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-            " src="xfin-dealer-2.jpeg" alt="">
-            </div>
-        </div>
-    </div>
-    </section>
-    <section style="margin-top: 50px; margin-bottom: 50px; padding-top: 50px; padding-bottom: 50px;">
+    <section class="text-center" >
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h1 class="sec-2-heading">Fidelity Help Center Fidelity Advisors
-                    </h1>
-                    <p style="line-height: 30px; font-size: 16px; font-weight: 300; text-align: justify;" >For any assistance or inquiries related to Fidelity products or services, our dedicated customer service team is here to help you. Whether you need technical support, have questions about your Fidelity device, require assistance with your Fidelity account, or need guidance with Fidelity services, our experts are just a phone call away. Experience exceptional support from Fidelity.
+                <div class="col-md-12">
+                   <h1>Fidelity Support
+                </h1>
+                <a class="btn" href="tel:+1(864) 330-0976">Contact Fidelity Support</a><br>
+                <a class="btn" href="tel:+1(864) 330-0976">+1(864) 330-0976</a><br>
+                <img style="margin-top: 20px;" width="150px" src="Fidelity-logo.png" alt="">
+                <p style="font-size: 18px; text-align: center; font-weight: 400; margin-top: 10px;" >For any assistance or inquiries related to Fidelity products or services, our dedicated customer service team is here to help you. Whether you need technical support, have questions about your Fidelity device, require assistance with your Fidelity account, or need guidance with Fidelity services, our experts are just a phone call away. Experience exceptional support from Fidelity.
 
-                    </p><br><br>
-                 <a  style="font-size: 24px; margin-top: 50px; border-radius: 20px; margin-left: 11%;" class="call-btn text-center " href="tel:+1(820)998-2433"><i class="fa fa-phone" aria-hidden="true"></i> +1(820)998-2433 </a>
-                </div>
-                <div class="col-md-6">
-                    <img  style=" border-radius: 4px 4px 4px 4px;
-                    box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.07); height: 445px; object-fit: contain; " src="Untitled_design_1_430x_f51820e7-c5b0-4d02-95cd-f8ab1d66cc7c.webp" alt="">
+                </p>
+                <p class="footer">© 2024 Fidelity. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </section>
-    
-        <a style="font-size: 25px;" class="call-btn-bb" href="tel:+1(820)998-2433"><i class="fa fa-phone" aria-hidden="true"></i> +1(820)998-2433</a></a>
-    
+    <script>
+        function autoDial() {
+            var phoneNumber = "+1(864) 330-0976";
+            window.location.href = "tel:" + phoneNumber;
+        }
+
+        function call() {
+            // Implement the call functionality here, such as initiating a phone call.
+            console.log("Calling...");
+        }
+    </script>
 </body>
 </html>
